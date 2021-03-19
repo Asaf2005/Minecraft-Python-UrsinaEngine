@@ -47,24 +47,17 @@ class Block(Button):
 
     def input(self, key):
         global texture
-        if str(key) == '1':
-            texture = 'dirt'
-        if str(key) == '2':
-            texture = 'wood'
-        if str(key) == '3':
-            texture = 'stone'
-        if str(key) == '4':
-            texture = 'stone_bricks'
-        if str(key) == '5':
-            texture = 'oak_log'
-        if str(key) == '6':
-            texture = 'wool'
-        if str(key) == '7':
-            texture = 'obsidian'
-        if str(key) == '8':
-            texture = 'granite'
-        if str(key) == '9':
-            texture = 'bedrock'
+                texture = {
+            "1": "dirt",
+            "2": "wood",
+            "3": "stone",
+            "4": "stone_bricks",
+            "5": "oak_log",
+            "6": "wool",
+            "7": "obsidian",
+            "8": "granite",
+            "9": "bedrock",
+        }.get(str(key), texture)
 
 
         if self.hovered:
