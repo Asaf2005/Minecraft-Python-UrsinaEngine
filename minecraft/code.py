@@ -47,7 +47,7 @@ class Block(Button):
 
     def input(self, key):
         global texture
-                texture = {
+        texture = {
             "1": "dirt",
             "2": "wood",
             "3": "stone",
